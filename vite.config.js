@@ -5,17 +5,17 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 
-  // Dùng khi dev local
+  // Dev local
   server: {
-    host: true,        // cho phép truy cập từ mạng
+    host: true,
     port: 3000,
     open: true
   },
 
-  // Dùng khi deploy Render (vite preview)
+  // Render (vite preview)
   preview: {
-    host: true,        // bắt buộc để Render bind 0.0.0.0
-    port: 10000,       // Render mặc định
+    host: true,
+    port: 10000,
     allowedHosts: [
       'the-crown-restaurant.onrender.com'
     ]
